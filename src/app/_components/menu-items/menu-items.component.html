@@ -1,0 +1,9 @@
+<nav class="main-nav d-none d-lg-flex">
+  <ul class="nav">
+    <li *ngFor="let menuItem of this.items">
+      <a routerLink="{{ menuItem.route }}">
+        <span class="menu-text">{{ menuItem.name }}</span>
+      </a>
+    </li>
+  </ul>
+</nav>

@@ -1,0 +1,6 @@
+<div *ngIf="errors.length" class="container">
+  <span v-if="errors.length === 1">{{errors[0].message}}</span>
+  <ul v-if="errors.length > 1">
+    <li v-for="error in errors" :key="error.message">{{error.message}}</li>
+  </ul>
+</div>
